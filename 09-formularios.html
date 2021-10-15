@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularios</title>
 </head>
+
 <body>
     <h1>Formularios</h1>
 
     <!-- <form action="https://www.google.com/search" method="GET"> -->
-        <form method="POST" action="https://express-server-method.herokuapp.com/">
-            <!-- <form method="POST"> -->
-       
+    <form method="POST" action="https://express-server-method.herokuapp.com/">
+        <!-- <form method="POST"> -->
+
         <!-- <input>
         <br>
         <hr>
@@ -38,8 +40,46 @@
         <input type="image" 
         src="https://www.mundocuentas.com/wp-content/uploads/2020/11/Paypal-logo-mundocuentas.png" alt="paypal"> -->
 
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="nombre">
+            <br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+
+        </fieldset>
+        <fieldset>
+            <legend>Direccion</legend>
+            <label for="name">Direccion</label>
+            <input type="text" id="direccion" name="direccion">
+            <br>
+            <label for="ciudad">ciudad</label>
+            <input type="text" name="text" id="text">
+
+        </fieldset>
+
+
+        <label for="url">url</label>
+        <input type="url" id="url">
+        <button type="submit">Enviar</button>
+        <br>
+        <label for="check">checkbox</label>
+        <input type="checkbox" id="check">
+        <button type="submit">Check</button>
+        <br>
+        <label for="radio">radio</label>
+        <input type="radio" id="radio">
+        <button type="submit">Enviar</button>
+<br>
+        <label for="radio">varias opciones</label>
+        <br> masculino<input type="radio" name="gen">
+         Femenino<input type="radio" name="gen">
+        Otro<input type="radio" name="gen">
+
 
     </form>
 
 </body>
+
 </html>
